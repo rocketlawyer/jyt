@@ -33,6 +33,12 @@ module.exports = function(grunt) {
                 ],
                 dest: 'dist/jeff.js'
             },
+            distExpress: {
+                src: [
+                    'lib/express3-jeff.js'
+                ],
+                dest: 'dist/express3-jeff.js'
+            }
         },
         uglify: {
             options: {
@@ -43,6 +49,10 @@ module.exports = function(grunt) {
             dist: {
                 src: 'dist/<%= pkg.name %>.js',
                 dest: 'dist/<%= pkg.name %>.min.js'
+            },
+            distExpress: {
+                src: 'dist/express3-jeff.js',
+                dest: 'dist/express3-jeff.min.js'
             }
         }
     });
@@ -51,7 +61,7 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-jshint');
     grunt.loadNpmTasks('grunt-contrib-uglify');
 
-    grunt.loadTasks('tasks');
+    //grunt.loadTasks('tasks');
 
     grunt.registerTask('dist-dir', function() {
         grunt.file.delete('dist');
