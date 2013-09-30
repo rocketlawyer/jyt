@@ -32,12 +32,6 @@ module.exports = function(grunt) {
                     'lib/jeff/browser-suffix.js'
                 ],
                 dest: 'dist/jeff.js'
-            },
-            distExpress: {
-                src: [
-                    'lib/express3-jeff.js'
-                ],
-                dest: 'dist/express3-jeff.js'
             }
         },
         uglify: {
@@ -49,10 +43,6 @@ module.exports = function(grunt) {
             dist: {
                 src: 'dist/<%= pkg.name %>.js',
                 dest: 'dist/<%= pkg.name %>.min.js'
-            },
-            distExpress: {
-                src: 'dist/express3-jeff.js',
-                dest: 'dist/express3-jeff.min.js'
             }
         }
     });
