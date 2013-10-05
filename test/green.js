@@ -24,6 +24,6 @@ describe("easy stuff", function() {
     })
 
     it("html page with model and partial that extends a layout", function() {
-        shouldCompileNodeFileTo("basicPageModelPartialExtends.jeff", {foo: "Goldie", bar: {baz: "Jeff", bam: "Christian"}}, "<!DOCTYPE html><html><head><title>I am a page title</title></head><body><div><h1>I am a header</h1><p>I am a section called Goldie</p><p class=\"2\"><div><p>this is a partial - holy crap!</p><a>and I can read from model too: Jeff</a></div></p></div></body></html>")
+        shouldCompileNodeFileTo("basicPageModelPartialExtends.jeff", {foo: "Goldie", bar: {baz: "Jeff", bam: "Christian"}}, "<!DOCTYPE html><html><head><title>I am a page title</title></head><body><div><h1>I am a header</h1><p>I am a section called Goldie</p><p class=\"2\"><div><p>this is a partial - holy crap!</p><a>and I can read from model too: Jeff</a></div></p></div><div><ol><li>option 1</li><li>option 2</li></ol></div></body></html>")
     })
 });
