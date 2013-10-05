@@ -6,6 +6,17 @@ global.shouldCompileTo = function(string, model, expected, message) {
     result.should.equal(expected, "'" + expected + "' should === '" + result + "': " + message);
 };
 
+global.shouldCompileFileTo = function(filepath, model, expected, message) {
+    var fs = require('fs');
+    var path = require('path');
+    var testDir = path.dirname(__dirname);
+    console.log("looking for " + testDir + "/" + filepath);
+    var templateString = fs.readFileSync(testDir + "/" + filepath, 'utf8');
+    var template = Jeff.template(templateString);
+    var result = template(model);
+    result.should.equal(expected, "'" + expected + "' should === '" + result + "': " + message);
+};
+
 global.equals = global.equal = function(a, b, msg) {
     a.should.equal(b, msg || '');
 };

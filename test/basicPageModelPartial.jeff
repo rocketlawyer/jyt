@@ -1,0 +1,16 @@
+(function(){
+    return {
+        html: {
+            head: {
+                title: "I am a page title"
+            },
+            body: {
+                "div": {
+                    "h1": "I am a header",
+                    "p": "I am a section called " + foo,
+                    "p.2": include("partial.jeff")
+                }
+            }
+        }
+    }
+}());

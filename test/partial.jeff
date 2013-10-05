@@ -1,0 +1,8 @@
+(function(){
+    return {
+        div: {
+            p: "this is a partial - holy crap!",
+            a: "and I can read from model too: " + bar.baz
+        }
+    };
+}());

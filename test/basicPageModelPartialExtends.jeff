@@ -1,0 +1,10 @@
+(function(){
+    return {
+        "extends": "layout.jeff",
+        "div": {
+            "h1": "I am a header",
+            "p": "I am a section called " + foo,
+            "p.2": include("partial.jeff")
+        }
+    }
+}());

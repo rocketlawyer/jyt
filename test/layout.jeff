@@ -1,0 +1,12 @@
+(function(){
+    return {
+        html: {
+            head: {
+                title: "I am a page title"
+            },
+            body: {
+                "include": "bodyContent"
+            }
+        }
+    }
+}());
