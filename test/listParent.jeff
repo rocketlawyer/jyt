@@ -1,0 +1,7 @@
+(function() {
+    return [
+        { "div": "exposed" },
+        { "p": "top level" }
+    ];
+    // <div>exposed</div><p>top level</p>
+}());

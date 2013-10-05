@@ -1,0 +1,10 @@
+(function() {
+    return {
+        "ol": {
+            "li": [
+                "this should be plain",
+                "and this too"
+            ]
+        }
+    }
+}());
