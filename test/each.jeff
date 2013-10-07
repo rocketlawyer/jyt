@@ -1,0 +1,9 @@
+(function() {
+    return {
+        "ol": {
+            "li": each(tweets, "tweet", "{\"h1\": tweet.title,\"p\": tweet.content}"),
+            "li.2": each(tweets, "{\"p\": it.content}")
+        }
+    }
+    // <ol><li><h1>title 1</h1><p>content 1</p></li><li><h1>title 2</h1><p>content 2</p></li><li><p>content 1</p></li><li><p>content 2</p></li></ol>
+}());

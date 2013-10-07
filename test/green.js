@@ -38,4 +38,29 @@ describe("easy stuff", function() {
     it("list that uses the array method to shorthand lists", function() {
         shouldCompileFileTo("listNested.jeff", {}, "<ol><li>this should be plain</li><li class=\"second\">but this should have a class</li><li><div>nested div</div><p>nested p</p></li><li><span>another way to nest</span></li></ol>")
     })
+
+    it("test the each helper function", function() {
+        shouldCompileFileTo("each.jeff", { tweets: [{title: "title 1", content: "content 1"},{title: "title 2", content: "content 2"}] }, "<ol><li><h1>title 1</h1><p>content 1</p></li><li><h1>title 2</h1><p>content 2</p></li><li class=\"2\"><p>content 1</p></li><li class=\"2\"><p>content 2</p></li></ol>")
+    })
+
+    it("test the ability to add a plugin", function() {
+        Jeff.registerPlugin("bootstrap", {
+            nav: function(items, activeItem) {
+                var code = null;
+                if ( items && items.length && items.length > 0 ) {
+                    var code = { "nav.navbar" : { "ol": { "li.navbar-nav": [] }}};
+                    for( var i = 0, len = items.length; i < len; ++i ) {
+                        if ( activeItem && items[i] === activeItem ) {
+                            code["nav.navbar"].ol["li.navbar-nav"].push({ "class": "active", "text": items[i]});
+                        } else {
+                            code["nav.navbar"].ol["li.navbar-nav"].push(items[i]);
+                        }
+                    }
+                }
+                return code;
+            }
+        });
+        shouldCompileFileTo("plugin.jeff", null, "<div><a href=\"/\">Home</a><div><nav class=\"navbar\"><ol><li class=\"navbar-nav\">Home</li><li class=\"navbar-nav\">About</li><li class=\"navbar-nav\">Contact</li></ol></nav></div></div>")
+    })
+
 });
