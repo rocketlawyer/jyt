@@ -11,14 +11,15 @@ var files = fs.readdirSync(testDir)
     .map(function(name) { return testDir + '/' + name; });
 
 run('./node', function() {
+    /*
     run('./browser', function() {
-        /*
         run('./runtime', function() {
             process.exit(errors);
         });
-        */
         process.exit(errors);
     });
+     */
+    process.exit(errors);
 });
 
 

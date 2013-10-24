@@ -1,9 +1,0 @@
-(function() {
-    return {
-        "div": {
-            "a[href=/]": "Home",
-            "div": bootstrap.nav(["Home","About","Contact"])
-        }
-    }
-    // <div><a href="/">Home</a><div><nav class=\"navbar\"><ol><li class=\"navbar-nav\">Home</li><li class=\"navbar-nav\">About</li><li class=\"navbar-nav\">Contact</li></ol></div>
-}());
