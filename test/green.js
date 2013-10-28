@@ -47,4 +47,7 @@ describe("easy stuff", function() {
         shouldCompileFileTo("res/plugin.js", null, "<div><a href=\"/\">Home</a><div><nav class=\"navbar\"><ol><li class=\"navbar-nav\">Home</li><li class=\"active navbar-nav\">About</li><li class=\"navbar-nav\">Contact</li></ol></nav></div></div>")
     })
 
+    it("test the naked function", function() {
+        shouldCompileFileTo("res/naked.js", null, "<div>item 1</div><div>another item</div>")
+    })
 });
