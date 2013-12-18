@@ -17,10 +17,9 @@
     "engines": {
         "node": ">=0.10.0"
     },
-    "dependencies": {
-        "uglify-js": "~2.3"
-    },
+    "dependencies": {},
     "devDependencies": {
+        "uglify-js": "~2.3",
         "async": "~0.2.9",
         "grunt": "~0.4.1",
         "grunt-contrib-concat": "~0.3.0",
