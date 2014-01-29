@@ -1,8 +1,15 @@
 {
-    "name": "jeff",
+    "name": "jeff-core",
     "description": "JSON-based HTML templating engine",
     "version": "0.1.0",
     "homepage": "http://gethuman.com",
+    "author": "Christian Allen <christian@gethuman.com>",
+    "contributors": [
+        {
+            "name": "Jeff Whelpley",
+            "email": "jeff@gethuman.com"
+        }
+    ],
     "keywords": [
         "jeff",
         "json",
