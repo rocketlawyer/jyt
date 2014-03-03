@@ -41,8 +41,8 @@ module.exports = function(grunt) {
                 preserveComments: 'some'
             },
             dist: {
-                src: 'dist/<%= pkg.name %>.js',
-                dest: 'dist/<%= pkg.name %>.min.js'
+                src: 'dist/jeff.js',
+                dest: 'dist/jeff.min.js'
             }
         }
     });
