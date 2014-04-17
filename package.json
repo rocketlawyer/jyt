@@ -1,7 +1,7 @@
 {
     "name": "jeff-core",
     "description": "JSON-based HTML templating engine",
-    "version": "0.1.3",
+    "version": "0.1.4",
     "homepage": "http://jeffjs.com",
     "author": "Christian Allen <christian@gethuman.com>",
     "contributors": [
