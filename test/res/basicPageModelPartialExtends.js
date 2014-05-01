@@ -3,7 +3,7 @@ module.exports = function(model) {
         "bodyContent": div([
             h1("I am a header"),
             p("I am a section called " + model.foo),
-            p(Jeff.template("partial.js")(model))
+            p(Jeff.render("partial.js", model))
         ]),
         "rightNavigation": ol([
             li("option 1"),

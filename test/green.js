@@ -40,7 +40,7 @@ describe("easy stuff", function() {
                         navItems.push(Jeff.elems.li({ "class": "navbar-nav" }, items[i]));
                     }
                 }
-                return Jeff.elem("nav", {class: "navbar"}, [Jeff.elems.ol(navItems)])
+                return Jeff.elem("nav", {class: "navbar"}, [Jeff.elems.ol(navItems)]);
             }
         });
         Jeff.addShortcutsToScope(global); // call this again to make sure plugin included

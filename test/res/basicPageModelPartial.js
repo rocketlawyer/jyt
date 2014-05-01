@@ -7,7 +7,7 @@ module.exports = function(model){
             div([
                 h1("I am a header"),
                 p("I am a section called " + model.foo),
-                p(require("./partial.js")(model))
+                p(Jeff.render("./partial.js", model))
             ])
         ])
     ]);

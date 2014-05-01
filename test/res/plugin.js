@@ -3,10 +3,4 @@ module.exports = function(model) {
         a({href: "/"}, "Home"),
         div(bootstrap.nav(["Home","About","Contact"],"About"))
     ]);
-    /*
-            "a[href=/]": "Home",
-            "div": bootstrap.nav(["Home","About","Contact"])
-        }
-    }
-    */
 };
