@@ -4,10 +4,10 @@ module.exports = function(model) {
             title("I am a page title")
         ]),
         body([
-            div([
+            div(
                 h1("I am a header"),
                 p("...and I am that header's section")
-            ])
+            )
         ])
     ]);
 };
