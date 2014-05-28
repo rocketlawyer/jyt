@@ -2,7 +2,7 @@
 {
     "name": "jeff-core",
     "description": "JSON-based HTML templating engine",
-    "version": "0.1.8",
+    "version": "0.1.9",
     "homepage": "http://jeffjs.com",
     "author": "Christian Allen <christian@gethuman.com>",
     "contributors": [
@@ -24,7 +24,7 @@
     ],
     "repository": {
         "type": "git",
-        "url": "git://github.com/gethuman/jeff.js.git"
+        "url": "git://github.com/gethuman/jeff-core.git"
     },
     "engines": {
         "node": ">=0.10.0"
