@@ -6,7 +6,11 @@ module.exports = function(model) {
         body([
             div(
                 h1("I am a header"),
-                p("...and I am that header's section")
+                p("...and I am that header's section"),
+                input({type: 'text', placeholder: 'hi'}),
+                [
+                    span('me too')
+                ]
             )
         ])
     ]);
