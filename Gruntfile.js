@@ -11,7 +11,7 @@ module.exports = function(grunt) {
                 force: true
             },
             files: [
-                'lib/**/!(browser-prefix|browser-suffix).js'
+                'lib/**/*.js'
             ]
         },
 
@@ -26,11 +26,11 @@ module.exports = function(grunt) {
             },
             dist: {
                 src: [
-                    'lib/jeff/browser-prefix.js',
+                    'lib/jeff/browser-prefix.js.txt',
                     'lib/jeff/base.js',
                     'lib/jeff/utils.js',
                     'lib/jeff/runtime.js',
-                    'lib/jeff/browser-suffix.js'
+                    'lib/jeff/browser-suffix.js.txt'
                 ],
                 dest: 'dist/jeff.js'
             }
