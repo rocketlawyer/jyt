@@ -10,7 +10,7 @@ describe("easy stuff", function() {
     })
 
     it("small html page", function() {
-        shouldCompileFileTo("res/basicPage.js", {foo: "foo"}, "<!DOCTYPE html><html><head><title>I am a page title</title></head><body><div><h1>I am a header</h1><p>...and I am that header's section</p></div></body></html>")
+        shouldCompileFileTo("res/basicPage.js", {foo: "foo"}, "<!DOCTYPE html><html><head><title>I am a page title</title></head><body><div><h1>I am a header</h1><p>...and I am that header's section</p><input type=\"text\" placeholder=\"hi\"/><span>me too</span></div></body></html>")
     })
 
     it("html page with model", function() {
