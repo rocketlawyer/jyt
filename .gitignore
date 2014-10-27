@@ -1,6 +1,6 @@
-.idea
-vendor
 .DS_Store
-dist
-node_modules
+node_modules/
+temp/
+coverage
 npm-debug.log
+coverage.html

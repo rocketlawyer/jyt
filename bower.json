@@ -1,9 +1,0 @@
-{
-    "name": "jeff.js",
-    "version": "0.1.0",
-    "main": "dist/jeff.js",
-    "ignore": [
-        "node_modules",
-        "components"
-    ]
-}
