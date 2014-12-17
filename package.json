@@ -1,6 +1,6 @@
 {
   "name": "jyt",
-  "version": "0.1.26",
+  "version": "0.1.27",
   "description": "JavaScript Your Templates",
   "main": "lib/jyt.js",
   "repository": {
@@ -20,6 +20,6 @@
   "dependencies": {},
   "devDependencies": {
     "gulp": "^3.8.10",
-    "taste": "^0.1.27"
+    "taste": "^0.1.28"
   }
 }
