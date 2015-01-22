@@ -8,10 +8,4 @@ var gulp    = require('gulp');
 var taste   = require('taste');
 var batter  = require('batter');
 
-batter.whip(gulp, {
-    taste:      taste,
-    require:    require,
-    rootDir:    __dirname
-});
-
-
+batter.whip(gulp, taste, {});
