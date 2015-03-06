@@ -63,6 +63,24 @@ describe('UNIT ' + name, function () {
         });
     });
 
+    describe('dashToCamelCase()', function () {
+        it('should return empty value untouched', function () {
+            taste.should.not.exist(target.dashToCamelCase());
+        });
+
+        it('should return string untouched if no dashes', function () {
+            var str = 'blahbla234';
+            target.dashToCamelCase(str).should.equal(str);
+        });
+
+        it('should replace all dashes and do camel casing', function () {
+            var str = 'one-two-three-four';
+            var expected = 'oneTwoThreeFour';
+            var actual = target.dashToCamelCase(str);
+            actual.should.equal(expected);
+        });
+    });
+
     describe('extend()', function () {
         it('should extend an objet with one other', function () {
             var obj1 = { foo: 'choo' };

@@ -62,4 +62,20 @@ describe('UNIT ' + name, function () {
             actual.should.equal(expected);
         });
     });
+
+    describe('registerComponents()', function () {
+        it('should do nothing if nothing passed in', function () {
+            var expected = target.elems.length || 0;
+            target.registerComponents();
+            var actual = target.elems.length || 0;
+            actual.should.equals(expected);
+        });
+
+        it('should register a set of components', function () {
+            var components = ['onetwo', 'one-two-three'];
+            target.registerComponents(components);
+            taste.should.exist(target.elems.onetwo, 'onetwo does not exist');
+            taste.should.exist(target.elems.oneTwoThree, 'oneTwoThree does not exist');
+        });
+    });
 });
