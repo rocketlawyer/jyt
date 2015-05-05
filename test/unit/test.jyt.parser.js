@@ -23,28 +23,34 @@ describe('UNIT ' + name, function () {
     before(function () { runtime.init(); });
 
     describe('parse()', function () {
-        it('should compare one elem with attr', function (done) {
-           var html = '<div ng-click="blah"></div>';
-           var expected = elems.div({ 'ng-click': 'blah' });
+        //it('should compare one elem with attr', function (done) {
+        //   var html = '<div ng-click="blah"></div>';
+        //   var expected = elems.div({ 'ng-click': 'blah' });
+        //    compare(html, expected, done);
+        //});
+
+        it('should compare one elem with attr and html comments', function (done) {
+            var html = '<div ng-click="blah"><!-- got here --></div>';
+            var expected = elems.div({ 'ng-click': 'blah' });
             compare(html, expected, done);
         });
 
-        it('should compare elem with string value', function (done) {
-            var html = '<div ng-click="blah">hello, world</div>';
-            var expected = elems.div({ 'ng-click': 'blah' }, 'hello, world');
-            compare(html, expected, done);
-        });
-
-        it('should have a more complex value', function (done) {
-            var html = '<div ng-click="blah">' +
-                    '<span class="foo">something here</span>' +
-                    '<a href="/">link here</a>' +
-                '</div>';
-            var expected = elems.div({ 'ng-click': 'blah' },
-                elems.span({ 'class': 'foo' }, 'something here'),
-                elems.a({ 'href': '/' }, 'link here')
-            );
-            compare(html, expected, done);
-        });
+        //it('should compare elem with string value', function (done) {
+        //    var html = '<div ng-click="blah">hello, world</div>';
+        //    var expected = elems.div({ 'ng-click': 'blah' }, 'hello, world');
+        //    compare(html, expected, done);
+        //});
+        //
+        //it('should have a more complex value', function (done) {
+        //    var html = '<div ng-click="blah">' +
+        //            '<span class="foo">something here</span>' +
+        //            '<a href="/">link here</a>' +
+        //        '</div>';
+        //    var expected = elems.div({ 'ng-click': 'blah' },
+        //        elems.span({ 'class': 'foo' }, 'something here'),
+        //        elems.a({ 'href': '/' }, 'link here')
+        //    );
+        //    compare(html, expected, done);
+        //});
     });
 });
