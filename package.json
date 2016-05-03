@@ -21,8 +21,8 @@
     "htmlparser": "1.7.7"
   },
   "devDependencies": {
-    "batter": "0.1.37",
+    "batter": "0.1.38",
     "gulp": "3.9.1",
-    "taste": "0.2.30"
+    "taste": "0.2.31"
   }
 }
