@@ -1,6 +1,6 @@
 {
   "name": "jyt",
-  "version": "0.1.119",
+  "version": "0.1.120",
   "description": "JavaScript Your Templates",
   "main": "lib/jyt.js",
   "repository": {
