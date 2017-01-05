@@ -23,6 +23,6 @@
   "devDependencies": {
     "batter": "^0.1.51",
     "gulp": "3.9.1",
-    "taste": "^0.2.41"
+    "taste": "^0.2.42"
   }
 }
