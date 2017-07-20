@@ -1,6 +1,6 @@
 {
   "name": "rl-jyt",
-  "version": "0.1.128",
+  "version": "0.1.129",
   "description": "JavaScript Your Templates",
   "main": "lib/jyt.js",
   "repository": {
@@ -21,9 +21,9 @@
     "htmlparser": "1.7.7"
   },
   "devDependencies": {
-    "batter": "^0.1.51",
+    "batter": "^0.1.52",
     "gulp": "3.9.1",
-    "taste": "^0.2.41"
+    "taste": "^0.2.43"
   },
   "scripts": {
     "gulp": "gulp"
