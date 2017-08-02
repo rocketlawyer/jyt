@@ -1,11 +1,11 @@
 {
-  "name": "rl-jyt",
-  "version": "0.1.129",
+  "name": "jyt",
+  "version": "0.1.128",
   "description": "JavaScript Your Templates",
   "main": "lib/jyt.js",
   "repository": {
     "type": "git",
-    "url": "git://github.com/rocketlawyer/jyt.git"
+    "url": "git://github.com/gethuman/jyt.git"
   },
   "keywords": [
     "javascript",
@@ -14,21 +14,15 @@
   "author": "Jeff Whelpley",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/rocketlawyer/jyt/issues"
+    "url": "https://github.com/gethuman/jyt/issues"
   },
-  "homepage": "https://github.com/rocketlawyer/jyt",
+  "homepage": "https://github.com/gethuman/jyt",
   "dependencies": {
     "htmlparser": "1.7.7"
   },
   "devDependencies": {
-    "batter": "^0.1.52",
+    "batter": "^0.1.51",
     "gulp": "3.9.1",
-    "taste": "^0.2.43"
-  },
-  "scripts": {
-    "gulp": "gulp"
-  },
-  "publishConfig": {
-    "registry": "https://rocketlawyer.jfrog.io/rocketlawyer/api/npm/npm-local"
+    "taste": "^0.2.41"
   }
 }
